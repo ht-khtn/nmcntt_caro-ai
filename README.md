@@ -87,12 +87,42 @@ python main.py
 
 ## 6. Quy tắc với Git
 
+### 6.1. Quy tắc commit
+
 - Mỗi thành viên phát triển phần việc trên branch riêng.
 - 2 branch chính: `main` và `dev`.
-- Đặt tên branch theo dạng `dev/feature/tên-module`. VD: `dev/feature/ai`, `dev/feature/ui`.
+- Đặt tên branch theo dạng `feature/tên-module`. VD: `feature/ai`, `feature/ui`, `feature/game`, `feature/controller`.
 - Không tự ý thay đổi cấu trúc dữ liệu hoặc giao diện hàm đã thống nhất.
 - Kiểm tra code trước khi tạo Pull Request.
 - Chỉ người phụ trách **Controller** mới được merge code vào `dev` và `main`.
+
+### 6.2. Hướng dẫn sử dụng Git
+
+1. Sau khi clone repo, tạo branch mới từ `dev`:
+
+```bash
+git clone https://github.com/ht-khtn/nmcntt_caro-ai.git
+cd nmcntt_caro-ai
+git switch dev
+git pull origin dev
+git switch -c feature/tên-module
+```
+
+2. Lần đầu commit:
+
+```bash
+git add .
+git commit -m "feat(tên-module): implement AI algorithm"
+git push -u origin feature/tên-module
+```
+
+3. Những lần commit tiép theo:
+
+```bash
+git add .
+git commit -m "feat(tên-module): update evaluation function"
+git push
+```
 
 ## 7. Công nghệ và thuật toán dự kiến
 
