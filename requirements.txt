@@ -1,1 +1,2 @@
 pygame>=2.6,<3
+#use pygame 2.5.8
