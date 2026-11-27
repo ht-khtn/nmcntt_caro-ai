@@ -42,12 +42,12 @@ caro-ai/
 
 ## 3. Phân công công việc
 
-| Thành viên   | Phụ trách            | Thư mục                  |
-| ------------ | -------------------- | ------------------------ |
-| Thành viên 1 | Bàn cờ, luật chơi    | `game/`                  |
-| Khánh Duy    | Thuật toán AI        | `ai/`                    |
-| Thành viên 3 | Giao diện            | `ui/`                    |
-| Minh Luân    | Controller, tích hợp | `controller/`, `main.py` |
+| Thành viên | Phụ trách            | Thư mục                  |
+| ---------- | -------------------- | ------------------------ |
+| Hoàng Hiệp | Bàn cờ, luật chơi    | `game/`                  |
+| Khánh Duy  | Thuật toán AI        | `ai/`                    |
+| Minh Quang | Giao diện            | `ui/`                    |
+| Minh Luân  | Controller, tích hợp | `controller/`, `main.py` |
 
 ## 4. Quy ước chung
 
@@ -98,7 +98,7 @@ python main.py
 
 ### 6.2. Hướng dẫn sử dụng Git
 
-1. **Sau khi clone repo, tạo branch mới từ `dev`:**
+#### 1. Sau khi clone repo, tạo branch mới từ `dev`:
 
 ```bash
 git clone https://github.com/ht-khtn/nmcntt_caro-ai.git
@@ -115,7 +115,7 @@ git switch --track -c dev origin/dev
 git switch -c feature/tên-thành-viên/tên-module
 ```
 
-2. **Lần đầu commit:**
+#### 2. Lần đầu commit:
 
 Dùng `git status` để kiểm tra branch hiện tại và file thay đổi:
 
@@ -138,7 +138,7 @@ git push -u origin feature/tên-thành-viên/tên-module
 
 ```
 
-3. **Những lần commit tiép theo:**
+#### 3. Những lần commit tiép theo:
 
 Dùng `git status` để kiểm tra branch hiện tại và file thay đổi:
 
@@ -160,7 +160,7 @@ git commit -m "message" # Xem phần 6.3 để biết cách đặt message
 git push
 ```
 
-4. **Lấy code mới từ dev**
+#### 4. Lấy code mới từ dev
 
 Dùng `git status` để kiểm tra branch hiện tại và file thay đổi:
 
@@ -188,7 +188,7 @@ Lưu ý:
 - Đảm bảo đã commit và push các thay đổi đang làm.
 - Nếu xảy ra conflict, phải giải quyết hoàn toàn trước khi tiếp tục.
 
-5. **Tạo Pull Request (Lấy thay đổi của mình đem lên dev)**
+#### 5. Tạo Pull Request (Lấy thay đổi của mình đem lên dev)
 
 **Bước 1**: Commit và push lên branch cá nhân (mục 3)
 **Bước 2**: Vào GitHub, chọn tab Pull Request -> New Pull Request.
@@ -196,16 +196,16 @@ Lưu ý:
 
 ### 6.3. Quy tắc đặt tên commit
 
-**Đối với commit trên các branch, cần tuân theo cấu trúc sau:**
+#### Đối với commit trên các branch:
 
 Cấu trúc: `(tên-thành-viên/tên-module): nội-dung. File đã sửa: danh-sách-file-đã-sửa`.
 VD:
 
 - `(duy/ai): Thực hiện thuật toán minimax. File đã sửa: ai/minimax.py`,
-- `(hiep/ui): Thêm giao diện bàn cờ. File đã sửa: ui/app.py`,
-- `(quang/game): Cập nhật quy tắc cho điều kiện thắng. File đã sửa: game/rules.py`.
+- `(quang/ui): Thêm giao diện bàn cờ. File đã sửa: ui/app.py`,
+- `(hiep/game): Cập nhật quy tắc cho điều kiện thắng. File đã sửa: game/rules.py`.
 
-**Đối với commit đối với README.md, requirements.txt, cần tuân theo cấu trúc sau:**
+#### Đối với commit đối với README.md, requirements.txt:
 
 Thay đổi README: `(tên thành viên/docs): nội-dung. File đã sửa: danh-sách-file-đã-sửa`.
 Thay đổi requirements: `(tên thành viên/config): nội-dung. File đã sửa: danh-sách-file-đã-sửa`.
