@@ -138,7 +138,7 @@ git push -u origin feature/tên-thành-viên/tên-module
 
 ```
 
-#### 3. Những lần commit tiép theo:
+#### 3. Những lần commit tiếp theo:
 
 Dùng `git status` để kiểm tra branch hiện tại và file thay đổi:
 
